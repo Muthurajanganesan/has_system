@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hospital Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Dashboard</h1>
+        <a href="index.html">Logout</a>
+    </div>
+
+    <div class="box">
+        <h2>Search</h2>
+        <input type="text" id="searchBar" placeholder="Search hospital..." readonly>
+
+        <div id="hospitalList" class="hidden box">
+            <div class="list-item" onclick="openHospital('Manipal Hospitals')">1. Manipal Hospitals</div>
+            <div class="list-item" onclick="openHospital('Appollo Hospitals')">2. Appollo Hospitals</div>
+            <div class="list-item" onclick="openHospital('Govt Hospital')">3. Govt Hospital</div>
+            <div class="list-item" onclick="openHospital('Dharan Hospital')">4. Dharan Hospital</div>
+            <div class="list-item" onclick="openHospital('Iswarya Hospital')">5. Iswarya Hospital</div>
+        </div>
+    </div>
+
+    <div id="doctorBox" class="hidden box">
+        <h2 id="hospitalName"></h2>
+        <p>Doctor 1 <button onclick="book()">Book</button></p>
+        <p>Doctor 2 <button onclick="book()">Book</button></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
